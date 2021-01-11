@@ -30,7 +30,7 @@ document.querySelector(".check").addEventListener("click", function () {
     displayMessage("Correct number!");
     document.querySelector(".number").textContent = secretNumber;
     document.querySelector("body").style.backgroundColor = "#d0e9c8";
-    document.querySelector("body").style.width = "30rem";
+    document.querySelector(".number").style.width = "30rem";
 
     if (score > highscore) {
       highscore = score;
@@ -77,5 +77,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".score").textContent = score;
   document.querySelector(".number").textContent = "?";
   document.querySelector("body").style.backgroundColor = "#222";
-  document.querySelector("body").style.width = "15rem";
+  document.querySelector(".number").style.width = "15rem";
 });
