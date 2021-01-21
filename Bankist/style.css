@@ -17,8 +17,18 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #444;
-  background-color: #f3f3f3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: hsla(176, 31%, 55%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(176, 31%, 55%, 0.856) 0%,
+    rgba(144, 193, 170, 0.623) 35%,
+    rgba(200, 213, 185, 0.671) 68%,
+    rgb(235, 231, 218) 100%
+  );
+  /* color: #444;
+  background-color: #f3f3f3; */
   height: 100vh;
   padding: 2rem;
 }
@@ -114,7 +124,7 @@ nav {
 
 .balance__date {
   font-size: 1.4rem;
-  color: #888;
+  color: rgb(47, 61, 44);
 }
 
 .balance__value {
@@ -125,7 +135,7 @@ nav {
 /* MOVEMENTS */
 .movements {
   grid-row: 2 / span 3;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.644);
   border-radius: 1rem;
   overflow: scroll;
 }
@@ -151,7 +161,7 @@ nav {
   font-size: 1.1rem;
   text-transform: uppercase;
   font-weight: 500;
-  color: #666;
+  color: rgb(47, 66, 54);
 }
 
 .movements__type--deposit {
@@ -190,11 +200,11 @@ nav {
 
 .summary__value--in,
 .summary__value--interest {
-  color: #66c873;
+  color: #2d4130;
 }
 
 .summary__value--out {
-  color: #f5465d;
+  color: #8f424c;
 }
 
 .btn--sort {
@@ -214,15 +224,15 @@ nav {
 }
 
 .operation--transfer {
-  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  background-image: linear-gradient(to top left, #ffaf0383, #ffcd037a);
 }
 
 .operation--loan {
-  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  background-image: linear-gradient(to top left, #39b3847c, #9ae15d85);
 }
 
 .operation--close {
-  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  background-image: linear-gradient(to top left, #e52a5981, #ff586088);
 }
 
 h2 {
